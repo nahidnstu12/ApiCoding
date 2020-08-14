@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div class="container">
+        <div id="content" class="content">
+            <h1>Generate Names</h1>
+            <form action="#" id="generate-names">
+                <div class="row">
+                    <div class="six columns">
+                        <label for="country">Filter By AlbumId:</label>
+                        <select class="u-full-width" id="albumId">
+                            <option value=''>-- Select --</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            
+                        </select>
+                        <label for="genre">Number of photos to generate:</label>
+                        <select class="u-full-width" id="photos">
+                                <option value=''>-- Select --</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                                
+                        </select>
+                       
+                        <input class="button-primary u-full-width" type="submit" value="Generate">
+                    </div>
+
+                    <div class="six columns">
+                        <div id="result"></div>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/async.js"></script>
+</body>
+</html>
